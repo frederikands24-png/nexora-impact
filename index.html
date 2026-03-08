@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -22,8 +23,6 @@ font-family:'Inter',sans-serif;
 background:#f8fafc;
 color:#1f2937;
 }
-
-/* NAVBAR */
 
 nav{
 display:flex;
@@ -50,8 +49,6 @@ color:#0A2540;
 font-weight:600;
 }
 
-/* HERO */
-
 .hero{
 background:linear-gradient(135deg,#0A2540,#112E51);
 color:white;
@@ -60,7 +57,7 @@ padding:120px 20px;
 }
 
 .hero img{
-width:170px;
+width:160px;
 border-radius:50%;
 margin-bottom:25px;
 border:4px solid #2EB872;
@@ -73,10 +70,7 @@ margin-bottom:10px;
 
 .hero p{
 font-size:18px;
-opacity:0.9;
 }
-
-/* SECTIONS */
 
 section{
 padding:80px 10%;
@@ -89,8 +83,6 @@ margin-bottom:40px;
 color:#0A2540;
 }
 
-/* ABOUT */
-
 .about{
 max-width:900px;
 margin:auto;
@@ -98,8 +90,6 @@ text-align:center;
 font-size:18px;
 line-height:1.7;
 }
-
-/* CEO */
 
 .ceo{
 display:flex;
@@ -115,12 +105,6 @@ width:300px;
 border-radius:10px;
 }
 
-.ceo-text{
-flex:1;
-}
-
-/* SERVICES */
-
 .services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -133,8 +117,6 @@ padding:30px;
 border-radius:12px;
 box-shadow:0 8px 20px rgba(0,0,0,0.05);
 }
-
-/* PROJECTS */
 
 .projects{
 display:grid;
@@ -149,7 +131,17 @@ border-radius:10px;
 box-shadow:0 8px 20px rgba(0,0,0,0.05);
 }
 
-/* FOOTER */
+.conference{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.conference img{
+width:100%;
+border-radius:10px;
+box-shadow:0 6px 16px rgba(0,0,0,0.1);
+}
 
 footer{
 background:#0A2540;
@@ -172,24 +164,26 @@ margin-top:60px;
 <ul>
 <li><a href="#">Home</a></li>
 <li><a href="#about">About</a></li>
+<li><a href="#technology">Technology</a></li>
 <li><a href="#projects">Impact</a></li>
-<li><a href="#services">Services</a></li>
+<li><a href="#conference">Events</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 
 </nav>
 
-
 <section class="hero">
 
-<img src="images/logo.png">
+<img src="logo.png">
 
 <h1>Nexora Impact Technologies</h1>
 
-<p>Technology, Innovation and Data for Global Impact</p>
+<p>
+Building intelligent digital systems that empower organizations,
+communities and governments to solve global challenges through technology.
+</p>
 
 </section>
-
 
 <section id="about">
 
@@ -197,15 +191,17 @@ margin-top:60px;
 
 <p class="about">
 
-Nexora Impact Technologies is a global innovation company focused on building advanced technological solutions that generate measurable social, economic, and environmental impact.  
-Our mission is to empower organizations, governments, and communities through artificial intelligence, digital transformation, and data-driven innovation.
+Nexora Impact Technologies is a global technology startup focused on
+developing innovative digital systems that generate measurable social,
+economic and environmental impact.
 
-Through strategic partnerships, research, and technology development, Nexora works at the intersection of technology and global development to tackle complex challenges such as climate change, digital inequality, and sustainable economic growth.
+Our mission is to leverage artificial intelligence, data platforms and
+global partnerships to build scalable technological ecosystems that
+support climate innovation, digital education and sustainable development.
 
 </p>
 
 </section>
-
 
 <section>
 
@@ -213,9 +209,9 @@ Through strategic partnerships, research, and technology development, Nexora wor
 
 <div class="ceo">
 
-<img src="images/ceo.jpg">
+<img src="ceo.jpg.png">
 
-<div class="ceo-text">
+<div>
 
 <h3>Frederik Bjørn</h3>
 
@@ -225,10 +221,11 @@ Through strategic partnerships, research, and technology development, Nexora wor
 
 <p>
 
-Frederik Bjørn is the founder and CEO of Nexora Impact Technologies.  
-Born in 1989, Frederik is an entrepreneur and technology strategist focused on building innovative digital ecosystems that empower global communities.
+Frederik Bjørn founded Nexora Impact Technologies to build digital
+infrastructure for organizations working on global challenges.
 
-His leadership focuses on bridging cutting-edge technologies with real-world impact, bringing together artificial intelligence, global partnerships, and sustainable innovation.
+His work focuses on combining artificial intelligence, data analytics
+and global collaboration to accelerate innovation and impact worldwide.
 
 </p>
 
@@ -238,6 +235,30 @@ His leadership focuses on bridging cutting-edge technologies with real-world imp
 
 </section>
 
+<section id="technology">
+
+<h2>Our Technology</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Nexora AI</h3>
+<p>AI systems supporting predictive analytics and decision intelligence.</p>
+</div>
+
+<div class="card">
+<h3>Nexora Data Platform</h3>
+<p>A scalable system transforming complex data into actionable insights.</p>
+</div>
+
+<div class="card">
+<h3>Nexora Impact Engine</h3>
+<p>Technology designed to track and optimize global impact projects.</p>
+</div>
+
+</div>
+
+</section>
 
 <section id="projects">
 
@@ -247,78 +268,60 @@ His leadership focuses on bridging cutting-edge technologies with real-world imp
 
 <div class="project">
 <h3>AI for Climate Resilience</h3>
-<p>Developing machine learning tools to help communities predict climate risks and improve disaster preparedness.</p>
+<p>Machine learning models predicting climate risks.</p>
 </div>
 
 <div class="project">
 <h3>Digital Education Platforms</h3>
-<p>Creating scalable digital learning platforms to expand access to quality education in emerging economies.</p>
+<p>Technology expanding access to education globally.</p>
 </div>
 
 <div class="project">
 <h3>Urban Data Intelligence</h3>
-<p>Using big data analytics to support smarter cities and sustainable urban planning.</p>
+<p>Advanced analytics helping cities become smarter.</p>
 </div>
 
 </div>
 
 </section>
 
+<section id="conference">
 
-<section id="services">
+<h2>Global Engagement</h2>
 
-<h2>Services</h2>
+<div class="conference">
 
-<div class="services">
-
-<div class="card">
-<h3>Artificial Intelligence</h3>
-<p>Design and deployment of AI-driven solutions for organizations.</p>
-</div>
-
-<div class="card">
-<h3>Digital Transformation</h3>
-<p>Helping companies and institutions modernize their digital infrastructure.</p>
-</div>
-
-<div class="card">
-<h3>Impact Technology</h3>
-<p>Technology solutions focused on social and environmental change.</p>
-</div>
-
-<div class="card">
-<h3>Data Strategy</h3>
-<p>Using data analytics and modeling to guide strategic decision-making.</p>
-</div>
+<img src="conference1.jpg">
+<img src="conference2.jpg">
+<img src="conference3.jpg">
 
 </div>
 
 </section>
-
 
 <section id="contact">
 
-<h2>Contact</h2>
+<h2>Partner With Nexora</h2>
 
 <p style="text-align:center;font-size:18px">
 
-Email: contact@nexoraimpact.com  
+We collaborate with startups, investors, organizations
+and institutions that want to leverage technology
+to create measurable global impact.
+
 <br><br>
-LinkedIn: Nexora Impact Technologies  
-<br><br>
-Global Operations
+
+Email: contact@nexoraimpact.com
 
 </p>
 
 </section>
-
 
 <footer>
 
 <p>© 2026 Nexora Impact Technologies</p>
 
 </footer>
-
 
 </body>
 </html>
