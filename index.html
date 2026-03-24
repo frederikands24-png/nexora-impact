@@ -2,10 +2,8 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Nexora Impact Technologies</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -125,21 +123,14 @@ border-radius:12px;
 box-shadow:0 10px 30px rgba(0,0,0,0.15);
 }
 
-.founder{
-display:flex;
-gap:40px;
-align-items:center;
-max-width:1000px;
+/* NEW SECTIONS */
+
+.center-text{
+max-width:800px;
 margin:auto;
-flex-wrap:wrap;
+text-align:center;
+font-size:20px;
 }
-
-.founder img{
-width:260px;
-border-radius:12px;
-}
-
-/* HOW IT WORKS */
 
 .steps{
 display:grid;
@@ -155,9 +146,18 @@ border-radius:12px;
 box-shadow:0 8px 20px rgba(0,0,0,0.05);
 }
 
-.step h3{
-margin-bottom:10px;
-color:#0A2540;
+.use-cases{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.use{
+background:white;
+padding:30px;
+border-radius:12px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
 }
 
 /* WAITLIST */
@@ -167,25 +167,6 @@ background:#0A2540;
 color:white;
 text-align:center;
 padding:120px 20px;
-}
-
-.waitlist h2{
-color:white;
-margin-bottom:15px;
-}
-
-.waitlist p{
-max-width:600px;
-margin:auto;
-margin-bottom:30px;
-opacity:0.9;
-}
-
-.waitlist form{
-display:flex;
-justify-content:center;
-gap:10px;
-flex-wrap:wrap;
 }
 
 .waitlist input{
@@ -205,14 +186,6 @@ font-weight:600;
 cursor:pointer;
 }
 
-.badge{
-margin-top:20px;
-font-size:14px;
-opacity:0.8;
-}
-
-/* FOOTER */
-
 footer{
 background:#0A2540;
 color:white;
@@ -221,181 +194,104 @@ padding:40px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <nav>
-
 <h2>Nexora</h2>
-
 <ul>
 <li><a href="#platform">Platform</a></li>
 <li><a href="#how">How it Works</a></li>
-<li><a href="#product">Product</a></li>
-<li><a href="#founder">Founder</a></li>
+<li><a href="#use">Use Cases</a></li>
+<li><a href="#roadmap">Roadmap</a></li>
 <li><a href="#waitlist">Early Access</a></li>
 </ul>
-
 </nav>
 
 <section class="hero">
-
 <h1>Nexora Impact Technologies</h1>
-
 <p>
 Building intelligent digital infrastructure that empowers organizations
-to solve global challenges through artificial intelligence and scalable data systems.
+to solve global challenges through artificial intelligence and scalable systems.
 </p>
-
 <a href="#waitlist" class="btn">Join Early Access</a>
-
 </section>
 
 <div class="metrics">
-
-<div>
-<div class="metric-number">10+</div>
-Countries targeted
+<div><div class="metric-number">10+</div>Countries targeted</div>
+<div><div class="metric-number">100K+</div>Projected users</div>
+<div><div class="metric-number">25+</div>Innovation projects</div>
 </div>
 
-<div>
-<div class="metric-number">100K+</div>
-Projected users
-</div>
-
-<div>
-<div class="metric-number">25+</div>
-Innovation projects
-</div>
-
-</div>
+<section>
+<h2>Our Vision</h2>
+<p class="center-text">
+We are building the digital infrastructure for the next generation of global innovation.
+Nexora enables organizations to move faster, make better decisions, and create measurable impact.
+</p>
+</section>
 
 <section id="platform">
-
 <h2>Nexora Platform</h2>
-
 <div class="grid">
-
-<div class="card">
-<h3>Nexora AI</h3>
-<p>AI-driven predictive analytics for smarter decision-making.</p>
+<div class="card"><h3>Nexora AI</h3><p>AI-driven predictive intelligence.</p></div>
+<div class="card"><h3>Data Platform</h3><p>Unified global data infrastructure.</p></div>
+<div class="card"><h3>Impact Engine</h3><p>Measure and optimize impact.</p></div>
 </div>
-
-<div class="card">
-<h3>Nexora Data Platform</h3>
-<p>Unified global data infrastructure for complex systems.</p>
-</div>
-
-<div class="card">
-<h3>Nexora Impact Engine</h3>
-<p>Measure and optimize real-world impact at scale.</p>
-</div>
-
-</div>
-
 </section>
 
 <section id="how">
-
 <h2>How Nexora Works</h2>
-
 <div class="steps">
-
-<div class="step">
-<h3>1. Data Integration</h3>
-<p>Collect and unify complex data from multiple sources globally.</p>
+<div class="step"><h3>1. Data</h3><p>Integrate global data sources.</p></div>
+<div class="step"><h3>2. AI</h3><p>Analyze with intelligent systems.</p></div>
+<div class="step"><h3>3. Impact</h3><p>Deliver actionable insights.</p></div>
 </div>
-
-<div class="step">
-<h3>2. AI Analysis</h3>
-<p>Apply intelligent models to generate predictive insights.</p>
-</div>
-
-<div class="step">
-<h3>3. Impact Intelligence</h3>
-<p>Transform insights into actionable strategies for organizations.</p>
-</div>
-
-</div>
-
 </section>
 
-<section id="product">
-
-<h2>Platform Preview</h2>
-
-<div class="mockup">
-
-<img src="images/platform-preview.png">
-
+<section id="use">
+<h2>Who Nexora Is For</h2>
+<div class="use-cases">
+<div class="use">Governments</div>
+<div class="use">NGOs</div>
+<div class="use">Startups</div>
+<div class="use">Research Institutions</div>
 </div>
-
 </section>
 
-<section id="founder">
-
-<h2>Founder</h2>
-
-<div class="founder">
-
-<img src="images/ceo.jpg.png">
-
-<div>
-
-<h3>Frederik Bjørn</h3>
-
-<p><strong>Founder & CEO</strong></p>
-
-<br>
-
-<p>
-Founder of Nexora Impact Technologies, building digital systems that empower
-organizations to solve global challenges through AI and data.
+<section>
+<h2>Technology & Infrastructure</h2>
+<p class="center-text">
+Built on scalable cloud systems, advanced AI models, and real-time data pipelines,
+Nexora is designed to operate globally and securely.
 </p>
+</section>
 
+<section id="roadmap">
+<h2>Roadmap</h2>
+<div class="steps">
+<div class="step"><h3>2025</h3><p>Platform Development</p></div>
+<div class="step"><h3>2026</h3><p>Launch & Early Users</p></div>
+<div class="step"><h3>2027</h3><p>Global Expansion</p></div>
 </div>
-
-</div>
-
 </section>
 
 <section class="waitlist" id="waitlist">
-
 <h2>Join Nexora Early Access</h2>
-
-<p>
-Limited early access for organizations, innovators, and partners
-interested in shaping the future of intelligent digital infrastructure.
-</p>
+<p>Limited access for early innovators.</p>
 
 <form action="https://formspree.io/f/xzdjndea" method="POST">
-
 <input type="email" name="email" placeholder="Enter your email" required>
-
-<input type="hidden" name="_subject" value="New Nexora Waitlist Signup">
-
-<input type="hidden" name="_redirect" value="https://nexoraimpact.tech/thank-you.html">
-
 <button type="submit">Request Access</button>
-
 </form>
-
-<div class="badge">
-Launching soon • Early access limited
-</div>
 
 </section>
 
 <footer>
-
 <p><strong>Nexora Impact Technologies</strong></p>
-
 <p>contact@nexoraimpact.tech</p>
-
 <p>© 2026 Nexora</p>
-
 </footer>
 
 </body>
